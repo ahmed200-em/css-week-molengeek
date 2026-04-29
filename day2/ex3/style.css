@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.the-main {
+  padding: 10px;
+}
+.fs-div1,
+.fs-div2,
+.s-div1,
+.s-div2,
+.f-div,
+.t-div {
+  background: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  align-items: center;
+  font-size: 22px;
+}
+.first-section {
+  display: flex;
+}
+
+.fs-twoDiv {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.fs-div1 {
+  height: 80px;
+}
+
+.fs-div2 {
+  width: 50%;
+  height: 170px;
+}
+.second-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.s-threediv {
+  display: flex;
+  flex-direction: column;
+}
+
+.s-div1 {
+  height: 60px;
+  width: 585px;
+}
+
+.s-twodiv {
+  width: 50%;
+  display: flex;
+}
+
+.s-div2 {
+  width: 50%;
+  height: 200px;
+}
+.third-section {
+  display: flex;
+}
+.third-section {
+  display: flex;
+  flex-direction: row;
+}
+.five-div {
+  display: flex;
+  flex-direction: row;
+}
+.f-div {
+  height: 200px;
+  width: 109px;
+}
+.two-div2{
+    display: flex;
+    flex-direction: column;
+}
+.t-div {
+    height: 95px;
+    width: 589px;
+}
