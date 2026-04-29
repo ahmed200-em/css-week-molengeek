@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.the-main{
+    margin: 20px;
+}
+.fs-div,
+.sd-div,
+.tr-div,
+.fr-div,
+.ff-div,
+.sx-div,
+.sv-div{
+    border: 2px solid black;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.fs-div:hover,
+.sd-div:hover,
+.tr-div:hover,
+.fr-div:hover,
+.ff-div:hover,
+.sx-div:hover,
+.sv-div:hover{
+    box-shadow:  10px 10px 20px black;
+}
+.fs-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sd-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+}
+.tr-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fr-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.ff-section{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 127px;
+}
+.sx-section{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 127px;
+}
+.sv-section{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 127px;
+}
