@@ -3,11 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*! the main  */
 .the-main {
   padding: 10px;
 }
-.fs-section {
-}
+/* !styling dives */
 .fs-div,
 .sc-div,
 .td-div,
@@ -19,13 +19,16 @@
   justify-content: center;
   margin: 5px;
 }
+/* !first div */
 .fs-div {
   height: 130px;
 }
+/* ! the second section  */
 .sc-section {
   display: flex;
   flex-direction: row;
 }
+/* ! second div */
 .sc-div {
   height: 130px;
   width: 700px;

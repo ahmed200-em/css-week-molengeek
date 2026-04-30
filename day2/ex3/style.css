@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* ! styling the main  */
 .the-main {
   padding: 10px;
 }
+/* todo styling all the div  */
 .fs-div1,
 .fs-div2,
 .s-div1,
@@ -21,10 +22,11 @@
   align-items: center;
   font-size: 22px;
 }
+/* ? styling the first section  */
 .first-section {
   display: flex;
 }
-
+/* styling the two div  */
 .fs-twoDiv {
   display: flex;
   flex-direction: column;

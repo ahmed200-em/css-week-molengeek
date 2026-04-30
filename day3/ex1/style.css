@@ -3,9 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+/* ! THIS IS THE MAIN */
 .the-main{
     margin: 20px;
 }
+/* TODO STYLING ALL THE CARD */
 .fs-div,
 .sd-div,
 .tr-div,
@@ -25,6 +27,7 @@
     justify-content: center;
     gap: 30px;
 }
+/* ? JUST ADDING THE HOVER */
 .fs-div:hover,
 .sd-div:hover,
 .tr-div:hover,
@@ -34,11 +37,13 @@
 .sv-div:hover{
     box-shadow:  10px 10px 20px black;
 }
+ /* TODO STYLING THE FIRST SECTION */
 .fs-section{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+ /* TODO STYLING THE SECOND SECTION */
 .sd-section{
     display: flex;
     flex-direction: row;
@@ -46,11 +51,13 @@
     justify-content: center;
     gap: 500px;
 }
+ /* TODO STYLING THE THIRD SECTION */
 .tr-section{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+ /* TODO STYLING THE FOURTH SECTION */
 .fr-section{
     display: flex;
     flex-direction: row;
@@ -58,18 +65,21 @@
     justify-content: center;
     gap: 100px;
 }
+ /* TODO STYLING THE FIFTH SECTION */
 .ff-section{
     display: flex;
     align-items: center;
     justify-content: end;
     margin-right: 127px;
 }
+ /* TODO STYLING THE SIXTH SECTION */
 .sx-section{
     display: flex;
     align-items: center;
     justify-content: start;
     margin-left: 127px;
 }
+ /* TODO STYLING THE SEVENTH SECTION */
 .sv-section{
     display: flex;
     align-items: center;
