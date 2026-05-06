@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.hero-section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url(https://picsum.photos/1600/900);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.h1-1 {
+  color: white;
+}
+.p1 {
+  color: white;
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 8px 12px 8px 12px;
+  border-radius: 5px;
+  margin-top: 7px;
+  background: linear-gradient(
+    79deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(255, 102, 102, 1) 0%,
+    rgba(252, 176, 69, 1) 97%
+  );
+}
+.second-section {
+  height: 250px;
+  background: linear-gradient(90deg, #ff5a5f, #ff7a5c, #ff4d6d);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.second-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.08) 0px,
+    rgba(255, 255, 255, 0.08) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+.content {
+  background-color: white;
+  padding: 15px 40px 15px 40px;
+  border-radius: 10px;
+}
+.third-section {
+  height: 180px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background:
+    linear-gradient(rgb(214, 214, 214) 1px, transparent 2px),
+    linear-gradient(90deg, rgb(214, 214, 214) 1px, transparent 2px);
+  background-size: 40px 40px;
+  background-color: white;
+}
+.the-main {
+  background-image: url(./images/view-big-ben-clock-tower-london-sunset-uk.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+}
+.fourth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  height: 400px;
+}
+.the-footer {
+  height: 200px;
+  background: #352dd6;
+  background: linear-gradient(
+    90deg,
+    rgba(53, 45, 214, 1) 0%,
+    rgba(147, 147, 204, 1) 50%,
+    rgba(53, 45, 214, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+}
+.btn2 {
+  cursor: pointer;
+  border: none;
+  color: black;
+  padding: 8px 12px 8px 12px;
+  border-radius: 5px;
+  margin-top: 1px;
+  background: white;
+
+}
