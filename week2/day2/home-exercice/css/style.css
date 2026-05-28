@@ -15,140 +15,166 @@
     "Helvetica Neue",
     sans-serif;
 }
-.the-main-page {
+
+body {
   background: linear-gradient(135deg, #050a1e, #050b21, #070e2a, #091239);
-  height: 140vh;
+  min-height: 100vh;
+  padding: 20px;
 }
-.image1 {
+header{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 7px;
-  margin: 0 0 0 15px;
 }
-.image1-h2 {
-  color: white;
-  font-size: large;
+.the-main-page {
+  width: 100%;
 }
+
 .extension {
   background-color: rgb(31, 37, 53);
-  margin: 20px 120px 20px 120px;
   border-radius: 15px;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
   justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  width: 80%;
 }
+
+.image1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image1-h2 {
+  color: white;
+  font-size: 1.1rem;
+}
+
 .sun {
   background-color: rgb(47, 53, 76);
-  padding: 5px 7px 5px 7px;
+  padding: 8px 10px;
   border-radius: 10px;
-  margin: 10px 20px 10px 10px;
 }
 .extension-list {
-  margin: 40px 120px 10px 120px;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+  width: 80%;
+
 }
+
 .extension-list-h2 {
   color: white;
 }
+
 .btns-div {
   display: flex;
-  flex-direction: row;
   gap: 10px;
 }
+
 .a1 {
   text-decoration: none;
   color: rgb(135, 135, 135);
 }
+
+.p1,
 .p1-active {
-  background-color: rgb(125, 40, 9);
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.p1 {
-  background-color: rgb(47, 53, 76);
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.p1:active {
-  background-color: rgb(125, 40, 9);
-}
-.the-first-3card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.card1 {
-  background-color: rgb(31, 37, 53);
-  border-radius: 10px;
-  width: 320px;
-  height: 150px;
-  margin: 10px 0 0 0px;
+.p1 {
+  background-color: rgb(47, 53, 76);
 }
+
+.p1-active {
+  background-color: rgb(125, 40, 9);
+}
+
+.p1:hover {
+  background-color: rgb(125, 40, 9);
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  background-color: rgb(31, 37, 53);
+  border-radius: 12px;
+  width: 310px;
+  min-height: 160px;
+  padding: 15px;
+  flex: 1 1 330px;
+  max-width: 310px;
+}
+
+.card-head {
+  display: flex;
+  gap: 15px;
+}
+
 .icon {
-  background-color: rgb(192, 217, 188);
   width: 55px;
   height: 50px;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 0 0 15px;
+  flex-shrink: 0;
 }
-.card1-head {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
+
+.card-description {
+  margin-top: 5px;
 }
-.card1-description {
-  margin: 15px 0 0 0;
-}
-.card1-description h4 {
+
+.card-description h4 {
   color: white;
-  margin: 0 0 5px 0;
+  margin-bottom: 5px;
 }
-.card1-description p {
+
+.card-description p {
   color: gray;
-  font-size: small;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
-.btns {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  margin: 30px 30px 30px 30px;
-}
+.btns,
 .btns-1 {
   display: flex;
-  justify-content: center;
   justify-content: space-between;
-  margin: 14px 30px 10px 30px;
+  align-items: center;
+  margin-top: 25px;
 }
+
 .rmv-btn {
   background: transparent;
   border: 1px solid rgb(126, 126, 126);
   color: rgb(126, 126, 126);
-  padding: 5px 9px 5px 9px;
+  padding: 6px 12px;
   border-radius: 15px;
   cursor: pointer;
+  transition: 0.3s;
+}
+.rmv-btn:hover {
+  background-color: rgb(125, 40, 9);
+  border-color: rgb(125, 40, 9);
+  color: white;
 }
 .switch {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 20px;
-  margin-top: 4px;
 }
 
 .switch input {
@@ -159,8 +185,8 @@
 
 .slider {
   position: absolute;
-  cursor: pointer;
   inset: 0;
+  cursor: pointer;
   background-color: #555;
   border-radius: 34px;
   transition: 0.4s;
@@ -169,9 +195,9 @@
 .slider::before {
   content: "";
   position: absolute;
-  height: 16px;
   width: 16px;
-  left: -1px;
+  height: 16px;
+  left: 2px;
   top: 2px;
   background-color: white;
   border-radius: 50%;
@@ -183,67 +209,95 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-  transform: translateX(24px);
+  transform: translateX(20px);
 }
-.card2 {
-  background-color: rgb(31, 37, 53);
-  border-radius: 10px;
-  width: 320px;
-  height: 150px;
-  margin: 10px 0 0 10px;
+.icon1 {
+  background-color: rgb(192, 217, 188);
 }
-.card3 {
-  background-color: rgb(31, 37, 53);
-  border-radius: 10px;
-  width: 320px;
-  height: 150px;
-  margin: 10px 0 0 10px;
-}
+
 .icon2 {
   background-color: rgb(168, 214, 229);
 }
+
 .icon3 {
   background-color: rgb(254, 206, 211);
 }
+
 .icon4 {
   background-color: rgb(239, 193, 232);
 }
+
 .icon5 {
   background-color: rgb(174, 143, 231);
 }
+
 .icon6 {
   background-color: rgb(163, 197, 242);
 }
+
 .icon7 {
   background-color: rgb(80, 152, 177);
 }
+
 .icon8 {
   background-color: rgb(184, 185, 253);
 }
+
 .icon9 {
   background-color: rgb(153, 245, 225);
 }
+
 .icon10 {
   background-color: rgb(253, 217, 192);
 }
+
 .icon11 {
   background-color: rgb(142, 236, 244);
 }
+
 .icon12 {
   background-color: rgb(185, 251, 193);
 }
-.the-second-3card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/* mobile  */
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+  header{
+    width: 100%;
+  }
+  .extension {
+    padding: 12px 15px;
+    width: 80%;
+  }
+
+  .image1-h2 {
+    font-size: 1rem;
+  }
+
+  .btns-div {
+    flex-wrap: wrap;
+  }
+
+  .p1,
+  .p1-active {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .card-head {
+    flex-direction: column;
+  }
 }
-.the-third-3card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.the-fourth-3card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/* tablet */
+
+@media (max-width: 1000px) {
+  .extension-list {
+    flex-direction: column;
+  }
+
+  .card {
+    /* width: 100%; */
+    max-width: 100%;
+  }
 }

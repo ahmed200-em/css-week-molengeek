@@ -37,24 +37,21 @@
 }
 .second-section {
   height: 250px;
-  background: linear-gradient(90deg, #ff5a5f, #ff7a5c, #ff4d6d);
-  position: relative;
+
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.6) 0px,
+      rgba(255, 255, 255, 0.6) 10px,
+      transparent 10px,
+      transparent 20px
+    ),
+    linear-gradient(90deg, #ff5a5f, #ff7a5c, #ff4d6d);
+
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   text-align: center;
-}
-.second-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.08) 0px,
-    rgba(255, 255, 255, 0.08) 10px,
-    transparent 10px,
-    transparent 20px
-  );
 }
 .content {
   background-color: white;
@@ -67,10 +64,22 @@
   align-items: center;
   display: flex;
   text-align: center;
+  color: black;
   background:
-    linear-gradient(rgb(214, 214, 214) 1px, transparent 2px),
-    linear-gradient(90deg, rgb(214, 214, 214) 1px, transparent 2px);
-  background-size: 40px 40px;
+    repeating-linear-gradient(
+      0deg,
+      #ddd 0px,
+      #ddd 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #ddd 0px,
+      #ddd 1px,
+      transparent 1px,
+      transparent 40px
+    );
   background-color: white;
 }
 .the-main {
@@ -111,5 +120,4 @@
   border-radius: 5px;
   margin-top: 1px;
   background: white;
-
 }
